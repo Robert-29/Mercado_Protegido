@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  color: #454546;
+  background-color: #eaebef;
+}
+
+.fondo-encabezado{
+  height: 80px;
+  width: 100%;
+  background-color:#FFEB3B   ;
+  display: flex;
+}
+
+.fondo-encabezado img{
+  
+  margin-left: 100px;
+}
+
+.buscador{
+  display: flex;
+  background-color: white;
+  height: 50px;
+  width: 450px;
+  margin-top: 25px;
+  margin-left: 650px;
+  border-radius: 20px;
+}
+
+.buscador input{
+  height: 50px;
+  width: 400px;
+  outline-style: none;
+  border-style: none;
+  font-size: 20px;
+  text-align: center;
+  color: gray;
+  border-radius: 20px;
+}
+
+.buscador i{
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.baner{
+  overflow: hidden;
+}
+
+.baner img{
+  width: 100%;
+  height: 250px;
+}
+
+.baner ul{
+  display: flex;
+  animation: cambio 20s infinite alternate;
+  width: 400%;
+}
+
+.baner li{
+  width: 100%;
+  list-style: none;
+}
+
+@keyframes cambio{
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}
+
+/*==================|Menú|=============*/
+.navi {
+  width: 100%;
+}
+
+.list {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background: #FFEB3B;
+}
+
+li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+svg {
+  color: white;
+  font-size: 20px;
+}
+
+a {
+  color: #454546;
+}
+
+.list_click {
+  cursor: pointer;
+}
+
+.list_button {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+
+.link {
+  color: 303440;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  text-align: left;
+  font-size: 20px;
+}
