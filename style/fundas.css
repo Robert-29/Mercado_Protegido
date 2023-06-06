@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+
+
+/* #E65252 */
+
+
+
+
+
+
 body {
   font-family: "Figtree", sans-serif;
   color: #454546;
@@ -110,9 +119,9 @@ a {
 
 }
 
-.contenedor .tarjeta{
+.tarjeta{
   width: 260px;
-  height: 300px;
+  height: 320px;
   border-radius: 8px;
   box-shadow: 2px 2px  10px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -127,7 +136,65 @@ a {
 }
 
 .tarjeta img{
-  margin-top: 20px;
   height: 220px;
 }
 
+.tarjeta i{
+  font-size: 25px;
+  color: #454546;
+  margin: 3% 75%;
+  cursor: pointer;
+  transition: all 0.6s ease;
+
+}
+
+.tarjeta i:hover{
+  color: #E65252;
+}
+
+button{
+  transition: all 0.3s ease;
+}
+
+.tarjeta button{
+  font-size: 20px;
+  height: 30px;
+  width: 90px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.favorito{
+  background: #7285EE;
+  height: 60%;
+  width: 60%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  border: 1.5px solid #8D9BED;
+}
+
+.favorito:hover{
+  background-color: #07DDAE;
+  box-shadow: 0 0 20px #05d8ce;
+  border-color: #07DDAE;
+  color: white;
+}
+
+.comprar{
+  background: #07DDAE;
+  height: 60%;
+  width: 60%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  border: 1.5px solid #07DDAE;
+}
+
+.comprar:hover{
+  background-color: #c9f1e7;
+  border-color: black;
+  color: black;
+}
