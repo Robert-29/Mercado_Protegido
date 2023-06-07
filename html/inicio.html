@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-
+    
     <link rel="stylesheet" href="../style/style.css">
 
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/7465292061.js" crossorigin="anonymous"></script>
 
 <body> 
@@ -34,13 +34,13 @@
                     <li>
                         <div>
                             <i class="fa-solid fa-cart-shopping"></i>
-                            <a href="#" class="link">Carrito</a>
+                            <a id="abrir" href="#" class="link">Carrito</a>
                         </div>
                     </li>
                     <li>
                         <div>
                             <i class="fa-sharp fa-solid fa-heart"></i>
-                            <a href="#" class="link">Fvorito</a>
+                            <a id="error" href="#" class="link">Fvorito</a>
                         </div>
                     </li>
                     <li class="list_click">
@@ -53,7 +53,7 @@
                     <li>
                         <div>
                             <i class="fa-solid fa-circle-user"></i>
-                            <a href="#" class="link">Contactanos</a>
+                            <a id="contacto" href="#" class="link">Contactanos</a>
                         </div>
                     </li>
                     <li>
@@ -74,7 +74,64 @@
             <li><img src="../img/anuncio4.jpeg" alt=""></li>
 
         </ul>
-    </div>|
+    </div>
+
+    <div class="popup">
+        <div class="contenido">
+            <h2>Mi Carrito</h2>
+            <div class="fila-1">
+                <div class="tarjeta">
+                    <a href="#"><img class="funda-imagen" src="../img/IPhone_14/14_1.png" alt=""></a>
+                    <h2 class="precio" >349.00$</h2>
+
+                </div>
+                <div class="tarjeta">
+                    <a href="#"><img class="funda-imagen" src="../img/IPhone_14/14_2.png" alt=""></a>
+                    <h2 class="precio" >199.00$</h2>
+
+                </div>
+                <div class="tarjeta">
+                    <a href="#"><img class="funda-imagen" src="../img/IPhone_14/14_5.png" alt=""></a>
+                    <h2 class="precio" >199.00$</h2>
+
+                </div>
+                <div class="tarjeta">
+                    <a href="#"><img class="funda-imagen" src="../img/IPhone_14/14_6.png" alt=""></a>
+                    <h2 class="precio" >199.00$</h2>
+
+                </div>
+            </div>
+            
+            <button class="cerrar" id="cerrar" > <b>Cerrrar</b> </button>
+            <button class="comprarCarrito" id="comprarCarrito" > <b>Comprar carrito</b> </button>
+        </div>
+    </div>
+
+
+    <div class="ventana-2">
+        <div class="contenido">
+            <h2 class="titulo" >Pide tu funda personalizada</h2>
+            <div class="fila-1">
+                <form action="#">
+                    <div class="persona">
+                        <label for="">De: </label>
+                        <input class="largo" type="email" name="" id="">
+                    </div>
+                    <div class="persona">
+                        <label for="">Para: </label>
+                        <input class="largo-2" type="email" name="" id="">
+                    </div>
+                    <div class="persona otro">
+                        <label for="">Describe tu <br> personalización: </label>
+                        <input class="corto" type="email" name="" id="">
+                    </div>
+                </form>
+            </div>
+            
+            <button class="cerrar" id="cerrarVentana" > <b>Cancelar</b> </button>
+            <button class="comprarCarrito" id="enviar" > <b>Enviar</b> </button>
+        </div>
+    </div>
 
     <div class="fundas">
         <h1>¡Encuentra las mejores fundas a los mejores precios!</h1>
